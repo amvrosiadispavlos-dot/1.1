@@ -1,0 +1,5 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+product_two_smallest = (a * b * c) / max(a, b, c)
+print("Произведение двух наименьших:", product_two_smallest)

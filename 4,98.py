@@ -1,0 +1,5 @@
+n = int(input("n (количество квартир) = "))
+a = int(input("a (номер первой квартиры) = "))
+product = n * (2 * a + n - 1)
+sum_even = (product % 2 == 0)
+print(f"Сумма номеров квартир чётная: {sum_even}")

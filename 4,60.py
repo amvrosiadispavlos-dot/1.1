@@ -1,0 +1,5 @@
+h1 = float(input("Рост 1: "))
+h2 = float(input("Рост 2: "))
+h3 = float(input("Рост 3: "))
+result = (h1 == h2 == h3)
+print("Рост одинаковый:", result)

@@ -1,0 +1,10 @@
+a1 = float(input("a1 = "))
+b1 = float(input("b1 = "))
+c1 = float(input("c1 = "))
+a2 = float(input("a2 = "))
+b2 = float(input("b2 = "))
+c2 = float(input("c2 = "))
+middle1 = (a1 + b1 + c1) - max(a1, b1, c1) - min(a1, b1, c1)
+middle2 = (a2 + b2 + c2) - max(a2, b2, c2) - min(a2, b2, c2)
+average_middle = (middle1 + middle2) / 2
+print("Среднее арифметическое средних чисел:", average_middle)

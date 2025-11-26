@@ -1,0 +1,5 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+print("а) a < b < c:", a < b < c)
+print("б) b > a > c:", b > a > c)

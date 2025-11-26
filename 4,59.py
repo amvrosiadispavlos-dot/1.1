@@ -1,0 +1,7 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+equilateral = (a == b == c)
+print("a) Равносторонний:", equilateral)
+isosceles = (a == b) or (b == c) or (a == c)
+print("б) Равнобедренный:", isosceles)

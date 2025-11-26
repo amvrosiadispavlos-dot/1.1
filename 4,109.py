@@ -1,0 +1,11 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+print("Числа в [1.6, 3.8]:", end=" ")
+if 1.6 <= a <= 3.8:
+    print(a, end=" ")
+if 1.6 <= b <= 3.8:
+    print(b, end=" ")
+if 1.6 <= c <= 3.8:
+    print(c, end=" ")
+print()

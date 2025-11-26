@@ -1,0 +1,6 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+d = float(input("d = "))
+fit1 = (a <= c and b <= d) or (a <= d and b <= c)
+print("Можно уместить:", fit1)

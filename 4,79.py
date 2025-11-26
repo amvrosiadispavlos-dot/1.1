@@ -1,0 +1,5 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+triangle_exists = (a + b > c) and (a + c > b) and (b + c > a)
+print(f"Треугольник со сторонами {a}, {b}, {c} существует: {triangle_exists}")

@@ -1,0 +1,7 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+max_val = max(a, b, c)
+min_val = min(a, b, c)
+print("Максимальное:", max_val)
+print("Минимальное:", min_val)

@@ -1,0 +1,6 @@
+a = int(input("a = "))
+b = int(input("b = "))
+ans1 = (b % a == 0)
+ans2 = (a % b == 0)
+print("a является делителем b:", ans1)
+print("b является делителем a:", ans2)

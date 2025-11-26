@@ -1,0 +1,6 @@
+a = float(input("Размер конверта a (мм) = "))
+b = float(input("Размер конверта b (мм) = "))
+c = float(input("Размер открытки c (мм) = "))
+d = float(input("Размер открытки d (мм) = "))
+fit = (c + 2 <= a and d + 2 <= b) or (c + 2 <= b and d + 2 <= a)
+print("Открытка входит в конверт:", fit)

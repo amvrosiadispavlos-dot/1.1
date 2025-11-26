@@ -1,0 +1,5 @@
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+result = (a == b) or (b == c) or (a == c)
+print("Есть хотя бы одна пара равных:", result)

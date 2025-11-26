@@ -1,0 +1,28 @@
+a = int(input("a (1-8, вертикаль фигуры): "))
+b = int(input("b (1-8, горизонталь фигуры): "))
+c = int(input("c (1-8, вертикаль цели): "))
+d = int(input("d (1-8, горизонталь цели): "))
+if not (1 <= a <= 8 and 1 <= b <= 8 and 1 <= c <= 8 and 1 <= d <= 8):
+    print("Координаты вне доски")
+else:
+    rook_threat = (a == c) or (b == d)
+    print("а) Ладья угрожает полю:", rook_threat)
+    bishop_threat = (abs(a - c) == abs(b - d))
+    print("б) Слон угрожает полю:", bishop_threat)
+    king_move = (abs(a - c) <= 1) and (abs(b - d) <= 1)
+    print("в) Король может переместиться:", king_move)
+    queen_threat = rook_threat or bishop_threat
+    print("г) Ферзь угрожает полю:", queen_threat)
+    white_pawn_normal = (a == c) and (d - b == 1)  
+    white_pawn_capture = (abs(a - c) == 1) and (d - b == 1)  
+    print("д) Белая пешка:")
+    print("   - обычный ход:", white_pawn_normal)
+    print("   - взятие:", white_pawn_capture)
+    black_pawn_normal = (a == c) and (b - d == 1) 
+    black_pawn_capture = (abs(a - c) == 1) and (b - d == 1) 
+    print("е) Чёрная пешка:")
+    print("   - обычный ход:", black_pawn_normal)
+    print("   - взятие:", black_pawn_capture)
+    knight_threat = ((abs(a - c) == 2 and abs(b - d) == 1) or
+                     (abs(a - c) == 1 and abs(b - d) == 2))
+    print("ж) Конь угрожает полю:", knight_threat)
