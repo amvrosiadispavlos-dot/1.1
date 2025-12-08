@@ -1,0 +1,5 @@
+n = int(input("Введите количество квартир: "))
+residents = list(map(int, input("Введите количество жильцов в каждой квартире через пробел: ").split()[:n]))
+max_residents = max(residents)
+count_max = residents.count(max_residents)
+print(f"Максимальное число жильцов ({max_residents}) проживает в {count_max} квартире(ах)")

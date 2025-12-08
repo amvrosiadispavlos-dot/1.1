@@ -1,0 +1,5 @@
+days = int(input("Введите количество дней в месяце: "))
+temperatures = list(map(float, input("Введите температуру за каждый день через пробел: ").split()[:days]))
+min_temp = min(temperatures)
+count_min = temperatures.count(min_temp)
+print(f"Самая низкая температура ({min_temp}°C) была {count_min} день(дней)")

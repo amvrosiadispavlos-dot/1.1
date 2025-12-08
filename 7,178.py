@@ -1,0 +1,7 @@
+numbers = list(map(int, input("Введите 12 целых чисел через пробел: ").split()[:12]))
+max_val = max(numbers)
+min_val = min(numbers)
+count_max = numbers.count(max_val)
+count_min = numbers.count(min_val)
+print(f"а) Максимальное значение {max_val} встречается {count_max} раз(а)")
+print(f"б) Минимальное значение {min_val} встречается {count_min} раз(а)")
