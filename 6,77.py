@@ -1,0 +1,5 @@
+n = input("Введите натуральное число: ")
+all_same = all(d == n[0] for d in n)
+has_pair = any(n[i] == n[i+1] for i in range(len(n)-1))
+print(f"а) Состоит из одинаковых цифр: {all_same}")
+print(f"б) Содержит две одинаковые цифры рядом: {has_pair}")
