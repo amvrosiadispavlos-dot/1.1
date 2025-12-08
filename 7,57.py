@@ -1,0 +1,7 @@
+print("Введите количество осадков за каждый день февраля (28 чисел через пробел):")
+precip = list(map(float, input().split()[:28]))
+sum_even = sum(precip[i] for i in range(1, 28, 2))
+sum_odd = sum(precip[i] for i in range(0, 28, 2)) 
+print(f"Осадки по чётным дням: {sum_even}")
+print(f"Осадки по нечётным дням: {sum_odd}")
+print(f"По чётным выпало больше, чем по нечётным: {sum_even > sum_odd}")

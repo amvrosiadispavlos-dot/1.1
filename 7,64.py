@@ -1,0 +1,6 @@
+n = int(input("Введите количество людей: "))
+years = list(map(int, input("Введите годы рождения через пробел: ").split()[:n]))
+count_before_1990 = sum(1 for y in years if y < 1990)
+count_after_2000 = sum(1 for y in years if y > 2000)
+print(f"Родившихся до 1990: {count_before_1990}")
+print(f"Родившихся после 2000: {count_after_2000}")

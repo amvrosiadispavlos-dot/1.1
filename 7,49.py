@@ -1,0 +1,5 @@
+month_days = int(input("Введите количество дней в месяце: "))
+print(f"Введите количество осадков за каждый день ({month_days} чисел через пробел):")
+precipitations = list(map(float, input().split()[:month_days]))
+total_even_days = sum(precipitations[i] for i in range(1, month_days, 2))
+print(f"Общее количество осадков за чётные дни: {total_even_days}")

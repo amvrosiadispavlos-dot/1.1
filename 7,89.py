@@ -1,0 +1,6 @@
+m = int(input("Введите количество чисел m: "))
+p = int(input("Введите число p: "))
+numbers = list(map(int, input(f"Введите {m} целых чисел через пробел: ").split()[:m]))
+limit = int(input("Введите число для сравнения (больше какого?): "))
+count_gt = sum(1 for num in numbers if num > limit)
+print(f"Количество чисел > {limit} = {count_gt}, кратно {p}: {count_gt % p == 0}")

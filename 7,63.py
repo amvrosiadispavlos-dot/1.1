@@ -1,0 +1,5 @@
+n = int(input("Введите количество учеников: "))
+grades = list(map(int, input("Введите оценки через пробел: ").split()[:n]))
+count_5 = grades.count(5)
+count_2 = grades.count(2)
+print(f"Пятёрок: {count_5}, двоек: {count_2}")

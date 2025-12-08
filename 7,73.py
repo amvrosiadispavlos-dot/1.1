@@ -1,0 +1,6 @@
+m = int(input("Введите количество чисел m: "))
+numbers = list(map(int, input(f"Введите {m} целых чисел через пробел: ").split()[:m]))
+count_mult3 = sum(1 for x in numbers if x % 3 == 0)
+count_mult7 = sum(1 for x in numbers if x % 7 == 0)
+print(f"Кратных 3: {count_mult3}")
+print(f"Кратных 7: {count_mult7}")

@@ -1,0 +1,5 @@
+n = int(input("Введите количество чисел n: "))
+p = float(input("Введите число p: "))
+numbers = list(map(float, input(f"Введите {n} вещественных чисел через пробел: ").split()[:n]))
+sum_greater = sum(x for x in numbers if x > p)
+print(f"Сумма чисел > {p}: {sum_greater}")

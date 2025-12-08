@@ -1,0 +1,5 @@
+n = int(input("Введите количество чисел n: "))
+x = int(input("Введите число x: "))
+numbers = list(map(int, input(f"Введите {n} целых чисел через пробел: ").split()[:n]))
+count_neg = sum(1 for num in numbers if num < 0)
+print(f"Количество отрицательных чисел = {count_neg}, превышает {x}: {count_neg > x}")

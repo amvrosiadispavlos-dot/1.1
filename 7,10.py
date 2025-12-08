@@ -1,0 +1,6 @@
+print("Введите баллы первого спортсмена (5 видов):")
+scores1 = list(map(int, input().split()[:5]))
+print("Введите баллы второго спортсмена (5 видов):")
+scores2 = list(map(int, input().split()[:5]))
+print("Сумма баллов первого:", sum(scores1))
+print("Сумма баллов второго:", sum(scores2))

@@ -1,0 +1,5 @@
+n = int(input("Введите количество чисел n: "))
+p = int(input("Введите число p: "))
+numbers = list(map(int, input(f"Введите {n} целых чисел через пробел: ").split()[:n]))
+sum_numbers = sum(numbers)
+print(f"Сумма = {sum_numbers}, меньше {p}: {sum_numbers < p}")

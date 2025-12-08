@@ -1,0 +1,5 @@
+n = int(input("Введите количество чисел n: "))
+b = int(input("Введите число b: "))
+numbers = list(map(int, input(f"Введите {n} целых чисел через пробел: ").split()[:n]))
+sum_numbers = sum(numbers)
+print(f"Сумма = {sum_numbers}, кратна {b}: {sum_numbers % b == 0}")

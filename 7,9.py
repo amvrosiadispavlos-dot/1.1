@@ -1,0 +1,6 @@
+print("Введите оценки первого ученика (4 предмета):")
+grades1 = list(map(int, input().split()[:4]))
+print("Введите оценки второго ученика (4 предмета):")
+grades2 = list(map(int, input().split()[:4]))
+print("Сумма оценок первого ученика:", sum(grades1))
+print("Сумма оценок второго ученика:", sum(grades2))

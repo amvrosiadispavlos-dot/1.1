@@ -1,0 +1,6 @@
+print("Введите количество жителей (тыс. чел.) 12 районов через пробел:")
+population = list(map(float, input().split()[:12]))
+print("Введите плотности населения (тыс. чел./км²) 12 районов через пробел:")
+densities = list(map(float, input().split()[:12]))
+total_area = sum(population[i] / densities[i] for i in range(12))
+print(f"Общая площадь области: {total_area:.2f} км²")

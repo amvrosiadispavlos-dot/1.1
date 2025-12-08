@@ -1,0 +1,8 @@
+n = int(input("Введите количество игр: "))
+points = list(map(int, input("Введите очки за каждую игру через пробел (3, 1, 0): ").split()[:n]))
+wins = points.count(3)
+draws = points.count(1)
+losses = points.count(0)
+print(f"Выигрышей: {wins}")
+print(f"Ничьих: {draws}")
+print(f"Проигрышей: {losses}")

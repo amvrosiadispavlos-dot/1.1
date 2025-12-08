@@ -1,0 +1,8 @@
+print("Введите осадки за каждый день января (31 число через пробел):")
+jan = list(map(float, input().split()[:31]))
+print("Введите осадки за каждый день марта (31 число через пробел):")
+mar = list(map(float, input().split()[:31]))
+avg_jan = sum(jan) / len(jan)
+avg_mar = sum(mar) / len(mar)
+print(f"Среднедневные осадки в январе: {avg_jan:.2f}")
+print(f"Среднедневные осадки в марте: {avg_mar:.2f}")

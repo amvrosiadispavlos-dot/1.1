@@ -1,0 +1,6 @@
+n = int(input("Введите количество чисел n: "))
+numbers = list(map(float, input(f"Введите {n} вещественных чисел через пробел: ").split()[:n]))
+count_pos = sum(1 for x in numbers if x > 0)
+count_neg = sum(1 for x in numbers if x < 0)
+print(f"Положительных чисел: {count_pos}")
+print(f"Отрицательных чисел: {count_neg}")

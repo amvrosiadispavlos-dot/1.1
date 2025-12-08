@@ -1,0 +1,5 @@
+capacity = float(input("Введите грузоподъёмность автомобиля: "))
+n = int(input("Введите количество грузов: "))
+masses = list(map(float, input("Введите массы грузов через пробел: ").split()[:n]))
+total_mass = sum(masses)
+print(f"Общая масса = {total_mass}, не превышает грузоподъёмность {capacity}: {total_mass <= capacity}")
