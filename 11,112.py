@@ -1,0 +1,11 @@
+arr = [5, 2, 9, 1, 7, 3]
+max_val = max(arr)
+min_val = min(arr)
+max_index = arr.index(max_val)
+min_index = arr.index(min_val)
+print(f"Массив: {arr}")
+print(f"a) Максимальный: {max_val}")
+print(f"b) Минимальный: {min_val}")
+print(f"c) Максимальный больше минимального на: {max_val - min_val}")
+print(f"d) Индекс максимального: {max_index}")
+print(f"e) Индексы мин и макс: {min_index}, {max_index}")
